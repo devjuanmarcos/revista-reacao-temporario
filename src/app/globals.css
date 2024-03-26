@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --rev-preto: 5, 5, 5;
+    --rev-branco: 251, 251, 254;
+
+    --rev-branco-card: 245, 245, 245;
+    --rev-revista-background: 255, 255, 255;
+
+    --rev-cinza-acessibility-tools: 220, 226, 226;
+    --rev-cinza-claro: 90, 90, 90;
+    --rev-cinza-escuro: 56, 56, 56;
+    --rev-cinza-muito-escuro: 67, 67, 67;
+
+    /* Tipos de */
+    --rev-categoria-acessibilidade: 255, 0, 122;
+    --rev-categoria-cultura: 105, 62, 48;
+    --rev-categoria-eventos: 37, 94, 13;
+    --rev-categoria-esportes: 143, 78, 249;
+    --rev-categoria-entrevista: 204, 0, 0;
+    --rev-categoria-justica-politica: 61, 73, 83;
+    --rev-categoria-tecnologias: 0, 129, 211;
+    --rev-categoria-saude: 61, 188, 158;
+    --rev-categoria-test-drive: 255, 92, 0;
+    --rev-categoria-internacional: 55, 23, 254;
+    --rev-categoria-trabalho: 65, 23, 43;
+    --rev-categoria-especial: 174, 46, 231;
+
+    /* Brand para cards e backgrounds */
+    --rev-brand-100: 236, 244, 244;
+    --rev-brand-200: 47, 183, 198;
+    --rev-brand-300: 37, 135, 149;
+    --rev-brand-400: 37, 107, 121;
+
+    /* Brand para textos e ícones */
+    --rev-brand-text-100: 236, 244, 244;
+    --rev-brand-text-200: 47, 183, 198;
+    --rev-brand-text-300: 37, 135, 149;
+    --rev-brand-text-400: 37, 107, 121;
+
+    /* Status */
+    --rev-status-confirmacao: 15, 203, 168;
+    --rev-status-incorreto: 227, 78, 78;
+  }
+
+  [data-theme="dark"] {
+    --rev-preto: 24, 24, 24;
+    --rev-branco: 27, 27, 27;
+
+    --rev-revista-background: 18, 18, 18;
+    --rev-branco-card: 31, 31, 31;
+    --rev-cinza-claro: 146, 146, 146;
+    --rev-cinza-escuro: 171, 166, 159;
+
+    /* Tipos de */
+    --rev-categoria-acessibilidade: 255, 0, 122;
+    --rev-categoria-cultura: 105, 62, 48;
+    --rev-categoria-eventos: 37, 94, 13;
+    --rev-categoria-esportes: 143, 78, 249;
+    --rev-categoria-entrevista: 204, 0, 0;
+    --rev-categoria-justica-politica: 61, 73, 83;
+    --rev-categoria-tecnologias: 0, 129, 211;
+    --rev-categoria-saude: 61, 188, 158;
+    --rev-categoria-test-drive: 255, 92, 0;
+    --rev-categoria-internacional: 55, 23, 254;
+    --rev-categoria-trabalho: 65, 23, 43;
+    --rev-categoria-especial: 174, 46, 231;
+
+    /* Brand */
+    --rev-brand-100: 36, 37, 37;
+    --rev-brand-200: 25, 32, 33;
+    --rev-brand-300: 23, 29, 30;
+    --rev-brand-400: 22, 26, 27;
+
+    /* Status */
+    --rev-status-confirmacao: 15, 203, 168;
+    --rev-status-incorreto: 227, 78, 78;
+  }
+
+  [data-theme="contrast"] {
+    --rev-preto: 24, 24, 24;
+    --rev-revista-background: 18, 18, 18;
+    --rev-azul-claro: 38, 169, 224;
+    --rev-branco-card: 255, 0, 0;
+    --rev-verde-vibrante: 22, 224, 127;
+    --rev-cinza: 88, 88, 84;
+    --rev-cinza-escuro: 171, 166, 159;
+    --rev-azul-principal: 27, 117, 187;
+    --rev-azul-medio: 22, 97, 156;
+    --rev-azul-escuro: 16, 83, 136;
+    --rev-azul-escuro-botao: 7, 67, 137;
+    --rev-degrade-azul-verde: linear-gradient(243deg, rgba(35, 223, 249, 1) -23.78%, rgba(22, 224, 127, 1) 84.31%);
+    --rev-card-laranja: 223, 90, 32;
+    --rev-card-laranja-escuro: 193, 70, 12;
+    --rev-card-roxo: 122, 21, 169;
+    --rev-card-verde: 15, 120, 50;
+    --rev-card-mostarda: 180, 153, 16;
+    --rev-hover-cinza: 235, 235, 235;
+    --rev-borda-monitor: 122, 21, 169;
+    --rev-borda-residente: 15, 120, 50;
+    --rev-borda-professor: 223, 90, 32;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --rev-categoria-cultura: 105, 62, 48;
+  }
+
+  [data-theme="monochrome"] {
+    --rev-preto: 24, 24, 24;
+    --rev-revista-background: 18, 18, 18;
+    --rev-azul-claro: 38, 169, 224;
+    --rev-branco-card: 50, 153, 204;
+    --rev-verde-vibrante: 22, 224, 127;
+    --rev-cinza-escuro: 171, 166, 159;
+    --rev-azul-principal: 27, 117, 187;
+    --rev-azul-medio: 22, 97, 156;
+    --rev-azul-escuro: 16, 83, 136;
+    --rev-azul-escuro-botao: 7, 67, 137;
+    --rev-degrade-azul-verde: linear-gradient(243deg, rgba(35, 223, 249, 1) -23.78%, rgba(22, 224, 127, 1) 84.31%);
+    --rev-card-laranja: 223, 90, 32;
+    --rev-card-laranja-escuro: 193, 70, 12;
+    --rev-card-roxo: 122, 21, 169;
+    --rev-card-verde: 15, 120, 50;
+    --rev-card-mostarda: 180, 153, 16;
+    --rev-hover-cinza: 235, 235, 235;
+    --rev-borda-monitor: 122, 21, 169;
+    --rev-borda-residente: 15, 120, 50;
+    --rev-borda-professor: 223, 90, 32;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --rev-categoria-cultura: 105, 62, 48;
+  }
+
+  * {
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+  }
+
+  body {
+    color: rgb(var(--rev-fonte-cinza));
+    background-color: rgb(var(--rev-residencia-background));
+    font-family: var(--font-anek-bangla);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  main {
+    padding-inline: 100px;
+  }
+
+  @media (max-width: 1024px) {
+    main {
+      padding-inline: 20px;
+    }
+  }
+
+  aside {
+    transition: font-size 0;
+  }
+
+  .container {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-areas:
+      "header header"
+      "sidebar main";
+    grid-template-columns: var(--sidebar-width, 15rem) 1fr;
+    grid-template-rows: 4.5rem 1fr;
+
+    @media (max-width: 640px) {
+      --sidebar-width: 4.25rem;
+    }
+
+    @media (max-width: 480px) {
+      --sidebar-width: 0rem;
+      grid-template-rows: 5rem 1fr;
+    }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container.collapsed {
+    --sidebar-width: 4.25rem;
+
+    @media (max-width: 480px) {
+      --sidebar-width: 0rem;
+    }
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .main {
+    grid-area: main;
+  }
+}
+
+.containerSwiper {
+  width: 100%;
+  max-width: 124rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.headingSwiper {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.swiper_container {
+  height: max-content;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: 22.5rem;
+  height: 34.3125rem;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    width: 100%;
+    max-width: 28rem !important;
+  }
+  .swiper-slide img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.swiper-slide img {
+  width: 22.5rem;
+  height: 29.1875rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 16rem;
+  margin-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: calc(100% - 10px);
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width: 500px) {
+  .slider-controler {
+    bottom: 29rem;
+  }
+}
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-next {
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-next {
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .slider-controler .swiper-button-prev {
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler .swiper-button-prev {
+    transform: translateX(-20%) !important;
+  }
+}
+
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 2rem;
+  left: unset !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
