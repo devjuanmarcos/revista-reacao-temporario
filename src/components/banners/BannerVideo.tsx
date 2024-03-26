@@ -71,12 +71,12 @@ export const BannerVideo: React.FC<VideoCardProps> = ({ channelId }) => {
               title={"Boletim de Notícias da TV Reação | Segunda Feira, 04 de Março de 2024"}
               paragraph="Além das notícias convencionais, o boletim diário do Reação TV destaca eventos, histórias e realizações da comunidade local e global. Isso inclui cobertura de iniciativas comunitárias, projetos de inclusão, campanhas de conscientização e outras histórias inspiradoras que celebram a diversidade e promovem a igualdade."
             />
-            <Button variant="default" size="default" className="w-max">
+            <button className="w-max">
               <div className="flex gap-3 w-max justify-center items-center">
                 <span>Assistir</span>
                 <FaLongArrowAltRight color="#fff" />
               </div>
-            </Button>
+            </button>
           </div>
         </div>
       </section>
@@ -124,12 +124,12 @@ export const BannerVideo: React.FC<VideoCardProps> = ({ channelId }) => {
             title={latestVideo.title}
             paragraph="Além das notícias convencionais, o boletim diário do Reação TV destaca eventos, histórias e realizações da comunidade local e global. Isso inclui cobertura de iniciativas comunitárias, projetos de inclusão, campanhas de conscientização e outras histórias inspiradoras que celebram a diversidade e promovem a igualdade."
           />
-          <Button variant="default" size="default" className="w-max">
+          <button className="w-max">
             <div className="flex gap-3 w-max justify-center items-center">
               <span>Assistir</span>
               <FaLongArrowAltRight color="#fff" />
             </div>
-          </Button>
+          </button>
         </div>
       </div>
     </section>

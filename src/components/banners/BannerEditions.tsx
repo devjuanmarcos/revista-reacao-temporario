@@ -10,12 +10,12 @@ export const BannerMainEditions = () => {
           title="Encontre sua próxima revista"
           paragraph="Lorem ipsum dolor sit amet. Ad necessitatibus sint et eius voluptas aut doloribus enim sed maxime ratione qui sequi aliquam quo nisi provident. Ea voluptatum totam ea nostrum facilis ut voluptatem atque ut debitis quisquam."
         />
-        <Button variant="default" size="default" className="w-max">
+        <button className="w-max">
           <div className="flex gap-3 w-max justify-center items-center">
             <span>Assinar</span>
             <FaLongArrowAltRight color="#fff" />
           </div>
-        </Button>
+        </button>
       </div>
     </section>
   );
